@@ -23,8 +23,7 @@ body{
 
 /* Globales */
 .contenedor {
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 
@@ -82,6 +81,7 @@ img{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 3rem;
      }
      .header__text{
         margin-top: 15rem;
@@ -171,4 +171,24 @@ img{
 .widget-curso__label,
 .widget-curso__info{
     font-size: 2rem;
+}
+
+/* Footer */
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/* Sobre nosotros */
+
+@media (min-width: 768px) {
+     .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+     }
+     .sobre-nosotros__img,
+     .sobre-nosotros__texto{
+        flex-basis: 50%;
+     }
 }
